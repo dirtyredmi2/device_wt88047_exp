@@ -383,3 +383,7 @@ PRODUCT_COPY_FILES += \
 
 # MSM8916 Headers
 PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8916/kernel-headers
+
+# WiFi HAL
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
