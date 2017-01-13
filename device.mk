@@ -402,3 +402,7 @@ PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8x09/kernel-headers
 # WiFi HAL
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl
