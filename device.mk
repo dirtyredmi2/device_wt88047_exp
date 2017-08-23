@@ -187,6 +187,11 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+   media.aac_51_output_enabled=true \
+   persist.media.treble_omx=false
+
 ifneq ($(QCPATH),)
 PRODUCT_PACKAGES += libOmxVdecHevc
 endif
