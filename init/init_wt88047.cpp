@@ -34,12 +34,13 @@
 #include <sys/_system_properties.h>
 #include <sys/sysinfo.h>
 
-#include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
-#include "util.h"
+#include "vendor_init.h"
 
 #include "init_msm8916.h"
+
+namespace android {
+namespace init {
 
 void property_override(char const prop[], char const value[])
 {
@@ -64,7 +65,7 @@ void init_target_properties()
     std::ifstream fin;
     std::string buf;
 
-    std::string product = property_get("ro.product.name");
+    std::string product = android::base::GetProperty("ro.product.name");
     if (product.find("wt88047") == std::string::npos)
         return;
 
