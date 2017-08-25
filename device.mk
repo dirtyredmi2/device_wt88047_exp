@@ -398,9 +398,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
 
-# MSM8916 Headers
-PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8x09/kernel-headers
-
 # WiFi HAL
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
