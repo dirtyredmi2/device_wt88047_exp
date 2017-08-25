@@ -370,7 +370,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
-# USB ID
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.usb.vid=2717 \
     ro.usb.id.midi=90BA \
@@ -381,6 +380,13 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.usb.id.ptp_adb=ff18 \
     ro.usb.id.ums=ff20 \
     ro.usb.id.ums_adb=ff28
+
+# USB debugging at boot
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
 
 # HIDL
 PRODUCT_COPY_FILES += \
