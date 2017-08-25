@@ -203,7 +203,7 @@ TARGET_RIL_VARIANT := caf
 MALLOC_SVELTE := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Video
