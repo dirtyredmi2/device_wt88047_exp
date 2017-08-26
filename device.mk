@@ -84,7 +84,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.fluencetype=fluence \
     persist.audio.fluence.voicecall=false \
     persist.audio.fluence.voicerec=false \
-    persist.audio.fluence.speaker=false
+    persist.audio.fluence.speaker=false \
+    debug.hwui.use_buffer_age=false
 
 # Charger
 PRODUCT_PACKAGES += \
