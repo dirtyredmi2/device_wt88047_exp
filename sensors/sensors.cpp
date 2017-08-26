@@ -78,7 +78,7 @@ struct sensors_module_t HAL_MODULE_INFO_SYM = {
 		common: {
 				tag: HARDWARE_MODULE_TAG,
 				version_major: 1,
-				version_minor: 0,
+				version_minor: 3,
 				id: SENSORS_HARDWARE_MODULE_ID,
 				name: "Quic Sensor module",
 				author: "Quic",
